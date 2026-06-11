@@ -18,7 +18,7 @@ body {
 }
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #153b27 ;
   overflow: hidden;
   width: 100vw;
   position: relative;
@@ -41,12 +41,12 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #153b27;
   color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #153b27;
   color: white;
 }
