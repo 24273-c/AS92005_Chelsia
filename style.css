@@ -80,3 +80,13 @@ body {
     width: 100%;
   }
 }
+.graph-img {
+ width: 400px;  /* Change this number to make it bigger or smaller */
+    height: 300px;   /* This keeps the image from stretching out of shape */
+   padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+
+
