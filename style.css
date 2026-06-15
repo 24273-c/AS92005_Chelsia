@@ -104,5 +104,28 @@ body {
   padding-bottom: 30px;
   padding-left: 20px;
     border: 2px solid black;
+}
 
+#div3 {
+  border: 5px dotted black;
+  padding: 35px;
+  background-color: lightblue;
+  background-clip: content-box;
+}
+
+
+.column2 {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contact_text{
+  background-color: #3e513c;
+  color: white;
 }
