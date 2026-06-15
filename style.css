@@ -74,19 +74,35 @@ body {
   width: 50%;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
 }
 .graph-img {
- width: 400px;  /* Change this number to make it bigger or smaller */
-    height: 300px;   /* This keeps the image from stretching out of shape */
+ width: 400px;
+    height: 300px;
    padding-top: 30px;
   padding-right: 20px;
   padding-bottom: 30px;
   padding-left: 20px;
 }
+.girl-img {
+ width: 300px;
+    height: 300px;
+   padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+.text_index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+    border: 2px solid black;
 
-
+}
