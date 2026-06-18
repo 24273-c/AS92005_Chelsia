@@ -182,3 +182,13 @@ body {
   background: #962fbf;
   color: white;
 }
+/* Custom Flexbox layout for the Google Icon and Text alignment */
+.google-contact-container {
+    display: flex;
+    align-items: center; /* Vertically centers text with the icon */
+    gap: 12px;           /* Adds space between the icon and the text */
+}
+
+.google-contact-container p {
+    margin: 0;           /* Clears default paragraph spacing issues */
+}
