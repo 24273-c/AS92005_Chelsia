@@ -158,10 +158,10 @@ body {
 .fa-facebook {
   background: #3B5998;
   color: white;
+  width:10;
 }
 .fa-youtube {
   background: #bb0000;
-  color: white;
 }
 .fa-google {
   background: red;
@@ -191,4 +191,15 @@ body {
 
 .google-contact-container p {
     margin: 0;           /* Clears default paragraph spacing issues */
+}
+.contact-bg {
+    background-color: #2d4a3e; /* Matches your header's dark green */
+    padding: 15px;             /* Adds breathing room inside the green area */
+    border-radius: 8px;        /* Optional: gives the green box soft, rounded corners */
+}
+
+/* Fixes text color inside the green box so you can read it */
+.contact-bg a,
+.contact-bg p {
+    color: white !important;
 }
