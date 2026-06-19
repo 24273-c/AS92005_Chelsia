@@ -134,7 +134,7 @@ body {
 .contact_text{
   background-color: #3e513c;
   color: white;
-  padding-left:20px;
+  padding-left:30px;
 }
 .contact_text2 a {
   color: black;
@@ -158,14 +158,13 @@ body {
 .fa-facebook {
   background: #3B5998;
   color: white;
-  width:10;
+
 }
 .fa-youtube {
   background: #bb0000;
 }
 .fa-google {
   background: red;
-  color: white;
 }
 .column3 {
   float: left;
@@ -186,20 +185,15 @@ body {
 .google-contact-container {
     display: flex;
     align-items: center; /* Vertically centers text with the icon */
-    gap: 12px;           /* Adds space between the icon and the text */
+    gap: 0px;
+
 }
 
 .google-contact-container p {
-    margin: 0;           /* Clears default paragraph spacing issues */
+    margin: 0;
+    padding-left:10px;
+    padding-right:10px;
 }
-.contact-bg {
-    background-color: #2d4a3e; /* Matches your header's dark green */
-    padding: 15px;             /* Adds breathing room inside the green area */
-    border-radius: 8px;        /* Optional: gives the green box soft, rounded corners */
-}
-
-/* Fixes text color inside the green box so you can read it */
-.contact-bg a,
-.contact-bg p {
-    color: white !important;
+ul {
+    margin-left: 35px; /* Adjust the pixels as needed */
 }
