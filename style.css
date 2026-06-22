@@ -80,7 +80,13 @@ body {
 }
 
 /* --- Content inside the fixed-size blocks --- */
-.graph-img, .girl-img {
+.graph-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures images fit neatly inside your 420x320 box without cutting off */
+    display: block;
+}
+.girl-img{
     width: 100%;
     height: 100%;
     object-fit: contain; /* Ensures images fit neatly inside your 420x320 box without cutting off */
@@ -183,4 +189,8 @@ body {
         width: 100%;
         float: none;
     }
+}
+.about-container {
+    display: flex;
+    gap: 15px; /* Adds clean spacing between the two texts */
 }
