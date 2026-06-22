@@ -191,6 +191,87 @@ body {
     }
 }
 .about-container {
-    display: flex;
     gap: 15px; /* Adds clean spacing between the two texts */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 1. Setup the page body as a vertical flex container */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Forces body to take full screen height */
+
+}
+
+/* 2. Top box stretches to fill available space */
+.top-box {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box; /* Keeps scrollbars from appearing */
+  background-color: #f3dbb9; /* Change this to your preferred top background color */
+}
+
+
+/* 3. Footer styles */
+footer {
+  background-color: #3e513c; /* Change this to your preferred footer background color */
+  padding: 40px 20px;       /* Adds breathing room inside the footer */
+}
+.about{
+color:#395244;
+text-decoration: underline;
+}
+.about2{
+color:#739b82;
+text-decoration: underline;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column5 {
+    width: 100%;
+  }
+}
+.column5 {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row5:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.people_img{
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+/* 2. Fix the Top Box content touching the edges */
+.about-container {
+  padding: 20px;          /* Adds breathing room on all sides */
+  max-width: 1200px;      /* Prevents text from stretching too wide on big screens */
+  margin: 0 auto;         /* Centers the content box on the page */
+}
+
+/* 3. Fix the Footer content touching the edges */
+.row2 {
+  max-width: 1200px;      /* Matches the width limit of the top box */
+  margin: 0 auto;         /* Centers the contact section */
+  padding: 0 20px;        /* Adds safety spacing on the left and right sides */
+}
+.plant_img{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    padding-left :50px;
+    object-fit: contain; /* Ensures images fit neatly inside your 420x320 box without cutting off */
+    display: block;
 }
