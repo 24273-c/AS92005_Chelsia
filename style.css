@@ -76,8 +76,8 @@ body {
     padding-left: 40px;
 
     box-sizing: border-box; /* Keeps padding inside the 420x320 dimensions */
-    border: 2px solid black;
-}
+}    border: 2px solid black;
+
 
 /* --- Content inside the fixed-size blocks --- */
 .graph-img {
@@ -245,9 +245,13 @@ text-decoration: underline;
   clear: both;
 }
 .people_img{
-    width: 400px;
-    height: 300px;
-    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures images fit neatly inside your 420x320 box without cutting off */
+    display: block;
+     border: 2px solid black;
+
+
 
 }
 * {
@@ -267,11 +271,35 @@ text-decoration: underline;
   margin: 0 auto;         /* Centers the contact section */
   padding: 0 20px;        /* Adds safety spacing on the left and right sides */
 }
-.plant_img{
-    width: 300px;
-    height: 300px;
-    border: 1px solid black;
-    padding-left :50px;
+.plant{
+    width: 100%;
+    height: 100%;
     object-fit: contain; /* Ensures images fit neatly inside your 420x320 box without cutting off */
     display: block;
+     border: 2px solid black;
+
+
+
 }
+.row5 .column5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Your exact requested dimensions */
+    width: 420px;
+    height: 320px;
+
+    /* Your exact requested paddings */
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    box-sizing: border-box; /* Keeps padding inside the 420x320 dimensions */
+}
+.text-under-image{
+
+}
+
+
