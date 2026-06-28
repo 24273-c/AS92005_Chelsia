@@ -76,7 +76,8 @@ body {
     padding-left: 40px;
 
     box-sizing: border-box; /* Keeps padding inside the 420x320 dimensions */
-}    border: 2px solid black;
+    border: 2px solid black; /* FIXED: Moved inside the selector bracket */
+}
 
 
 /* --- Content inside the fixed-size blocks --- */
@@ -184,7 +185,7 @@ body {
         width: 100%;
         text-align: center;
     }
-    
+
     .column2, .column3 {
         width: 100%;
         float: none;
@@ -273,11 +274,9 @@ text-decoration: underline;
     height: 100%;
     object-fit: contain; /* Ensures images fit neatly inside your 420x320 box without cutting off */
     display: block;
-     border: 2px solid black;
+    border: 2px solid black;
+} /* FIXED: Added missing closing bracket */
 
-
-
-}
 .row5 .column5 {
     display: flex;
     justify-content: center;
@@ -298,7 +297,6 @@ text-decoration: underline;
 
 .inline-text-container {
   display: flex; /* Aligns items on the same line */
-  gap: 240px;     /* Places exactly 20px of space between each item */
+  gap: 220px;     /* Places exactly 20px of space between each item */
   text-align: center;
-
 }
