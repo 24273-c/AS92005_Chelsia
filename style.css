@@ -433,7 +433,7 @@ padding: 20px;
 }
 
 .donate-container {
-  padding: 1px;          /* Adds breathing room on all sides */
+  padding: 20px;          /* Adds breathing room on all sides */
   max-width: 1200px;      /* Prevents text from stretching too wide on big screens */
   margin: 0 auto;         /* Centers the content box on the page */
 }
@@ -444,4 +444,26 @@ color:#395244;
 color:#739b82;
 text-decoration: underline;
 padding: 1px;
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.donate-text-1 {
+  box-sizing: border-box; /* Keeps padding inside the 420x320 dimensions */
+  width: 400px;
+  height: 150px;
+  padding: 12px;
+  border: 1px solid black;
 }
