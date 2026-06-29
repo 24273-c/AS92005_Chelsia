@@ -300,3 +300,148 @@ text-decoration: underline;
   gap: 220px;     /* Places exactly 20px of space between each item */
   text-align: center;
 }
+
+
+
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Form Container Style Only */
+.form-container {
+    background-color: #9ba38f;
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 4px;
+    color: #4a5441;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* Text Inputs */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-size: 16px;
+    color: #4a5441;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Option Cards (Checkboxes) */
+.option-card {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 14px 20px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.option-card label {
+    display: inline;
+    margin-bottom: 0;
+    margin-left: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    color: rgba(74, 84, 65, 0.7);
+}
+
+.option-card input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Selected State styling updated (no longer white) */
+.option-card.selected {
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: none;
+}
+
+.option-card.selected label {
+    color: rgba(74, 84, 65, 0.7);
+}
+
+/* Footer Status Section */
+.status-message {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.status-message p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    font-size: 11px;
+    color: #4a5441;
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.footer-link:hover {
+    opacity: 1;
+}
+
+
+
+
+
+.row12 {
+  display: flex;
+}
+
+.column12 {
+  flex: 50%;
+}
+.form-padding{
+padding: 20px;
+}
+
+.donate-container {
+  padding: 1px;          /* Adds breathing room on all sides */
+  max-width: 1200px;      /* Prevents text from stretching too wide on big screens */
+  margin: 0 auto;         /* Centers the content box on the page */
+}
+.donate{
+color:#395244;
+}
+.donate2{
+color:#739b82;
+text-decoration: underline;
+padding: 1px;
+}
