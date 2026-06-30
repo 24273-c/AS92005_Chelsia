@@ -305,116 +305,115 @@ text-decoration: underline;
 
 /* Reset and Base Styles */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-/* Form Container Style Only */
+/* Form Container Style Only - UPDATED SIZE AND OVERFLOW */
 .form-container {
-    background-color: #9ba38f;
-    width: 100%;
-    max-width: 800px;
-    padding: 40px;
-    border-radius: 4px;
-    color: #4a5441;
-    margin: 0 auto;
+  background-color: #9ba38f;
+  width: 748px;         /* Exact required width */
+  height: 567px;        /* Exact required height */
+  padding: 40px;
+  border-radius: 4px;
+  color: #4a5441;
+  margin: 0 auto;
+  overflow-y: auto;     /* Ensures content remains accessible within the fixed height */
 }
 
 h1 {
-    font-size: 24px;
-    font-weight: normal;
-    margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 30px;
 }
 
 /* Form Groups */
 .form-group {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 8px;
-    font-weight: 500;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 500;
 }
 
 /* Text Inputs */
-input[type="text"],
-input[type="email"] {
-    width: 100%;
-    padding: 12px;
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-size: 16px;
-    color: #4a5441;
-    outline: none;
+input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  color: #4a5441;
+  outline: none;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus {
-    border-color: rgba(0, 0, 0, 0.4);
-    background-color: rgba(255, 255, 255, 0.1);
+input[type="text"]:focus, input[type="email"]:focus {
+  border-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Option Cards (Checkboxes) */
 .option-card {
-    display: flex;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.05);
-    padding: 14px 20px;
-    border-radius: 4px;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 14px 20px;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
 .option-card label {
-    display: inline;
-    margin-bottom: 0;
-    margin-left: 12px;
-    cursor: pointer;
-    font-size: 15px;
-    color: rgba(74, 84, 65, 0.7);
+  display: inline;
+  margin-bottom: 0;
+  margin-left: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  color: rgba(74, 84, 65, 0.7);
 }
 
 .option-card input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
 }
 
 /* Selected State styling updated (no longer white) */
 .option-card.selected {
-    background-color: rgba(0, 0, 0, 0.05);
-    box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: none;
 }
 
 .option-card.selected label {
-    color: rgba(74, 84, 65, 0.7);
+  color: rgba(74, 84, 65, 0.7);
 }
 
 /* Footer Status Section */
 .status-message {
-    text-align: center;
-    margin-top: 40px;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .status-message p {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .footer-link {
-    font-size: 11px;
-    color: #4a5441;
-    text-decoration: underline;
-    opacity: 0.8;
+  font-size: 11px;
+  color: #4a5441;
+  text-decoration: underline;
+  opacity: 0.8;
 }
 
 .footer-link:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 
@@ -439,11 +438,15 @@ padding: 20px;
 }
 .donate{
 color:#395244;
+  font-size: 25px;
+
 }
 .donate2{
 color:#739b82;
 text-decoration: underline;
 padding: 1px;
+font-size: 25px;
+
 }
 
 
@@ -463,8 +466,120 @@ input[type=submit]:hover {
 .donate-text-1 {
   box-sizing: border-box; /* Keeps padding inside the 420x320 dimensions */
   width: 400px;
-  height: 150px;
-  padding: 12px;
+  height: 250px;
+  padding: 10px;
   border: 1px solid black;
+  font-size: 20px;
 }
-fghfh
+.row12 {
+  display: flex;
+}
+
+.column12 {
+  flex: 50%;
+}
+.phone{
+width:74px;
+height:74px;
+}
+.phone-container {
+  padding: 20px;          /* Adds breathing room on all sides */
+  max-width: 1200px;      /* Prevents text from stretching too wide on big screens */
+  margin: 0 auto;         /* Centers the content box on the page */
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Size and fit for your icon images */
+.contact-icon {
+  width: 74px;
+  height: 74px;
+  object-fit: contain;
+}
+
+/* Text wrapper to stack text vertically */
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Top text styling */
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Number styling */
+.number {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+}
+.contact-wrapper {
+  display: flex;         /* Places items side-by-side */
+  flex-direction: row;   /* Forces horizontal alignment */
+  justify-content: main; /* Spaces them out across the area */
+  gap: 50px;             /* Adds space between the two items */
+  padding: 20px;         /* Adds breathing room around the edges */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;   /* Perfectly centers icons with the text vertically */
+  gap: 15px;             /* Space between image and text */
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column; /* Keeps text stacked (label on top, number below) */
+}
+/* Main outer wrapper for the grid row */
+.faq-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #f3dbb9; /* Matches your beige background color */
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+/* Individual card styles */
+.faq-card {
+  flex: 1; /* Makes all 4 cards exactly the same width */
+  border: 2px solid #000000; /* Sharp black borders */
+  padding: 20px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the heading text */
+}
+
+/* Card Heading */
+.faq-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* Bullet list alignment */
+.faq-card ul {
+  width: 100%;
+  padding-left: 20px; /* Keeps bullets visible inside the card */
+  margin: 0;
+  text-align: left; /* Aligns text cleanly next to the bullets */
+}
+
+/* Individual list item styling */
+.faq-card li {
+  font-size: 14px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
