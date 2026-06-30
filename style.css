@@ -552,7 +552,7 @@ height:74px;
 .faq-card {
   flex: 1; /* Makes all 4 cards exactly the same width */
   border: 2px solid #000000; /* Sharp black borders */
-  padding: 20px;
+  padding: 25px;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -561,7 +561,7 @@ height:74px;
 
 /* Card Heading */
 .faq-card h3 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   margin-top: 0;
@@ -583,3 +583,8 @@ height:74px;
   margin-bottom: 12px;
   line-height: 1.4;
 }
+
+
+
+
+
