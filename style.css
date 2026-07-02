@@ -604,3 +604,150 @@ height:74px;
     border: 2px #f3dbb9; /* FIXED: Moved inside the selector bracket */
 
 }
+/* Ensure proper box sizing across all components */
+* {
+  box-sizing: border-box;
+}
+
+/* 1. Turn the main container row into a flexible layout */
+.row12 {
+  display: flex;
+  flex-wrap: wrap;       /* Allows layout elements to drop down when crowded */
+  width: 100%;           /* Spans across full viewport container */
+  max-width: 1200px;     /* Prevents overly stretched text elements on large screens */
+  margin: 0 auto;        /* Centers layout horizontally */
+  padding: 15px;         /* Prevents content touching screen edges */
+  gap: 20px;             /* Provides clean spacing between text box and form block */
+}
+
+/* 2. Configure default columns for wider desktop screens */
+.column12 {
+  flex: 1;               /* Forces items to split space equally side-by-side */
+  min-width: 300px;      /* Drops item down if viewport width drops under this limit */
+}
+
+/* 3. Apply a Media Query specifically optimizing mobile screens */
+@media screen and (max-width: 768px) {
+  /* Enforce stacked arrangement over standard horizontal rows */
+  .row12 {
+    flex-direction: column;
+  }
+
+  /* Make text blocks and donation form span full screen width */
+  .column12 {
+    width: 100%;
+  }
+
+  /* Optimize padding wrapper inside form for tight screens */
+  .form-padding {
+    padding: 10px 0;
+  }
+}
+
+/* 4. Fix fixed-width properties inside text wrapper boxes */
+.donate-text-1 {
+  width: 100% !important;     /* Overrides rigid pixel constraints */
+  max-width: 100%;
+  word-wrap: break-word;      /* Prevents single lines spilling outside walls */
+}
+/* Ensure content box math accounts for borders across elements */
+* {
+  box-sizing: border-box;
+}
+
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;         /* Drops items into rows when space is restricted */
+  justify-content: center; /* Centers cards on desktop setups */
+  gap: 20px;               /* Clean grid space separation */
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;       /* Centers content alignment block */
+  padding: 0 15px;         /* Side breathing space for mobile limits */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  flex: 1;                 /* Allocates even width across desktop rows */
+  min-width: 280px;        /* Dictates minimum safe screen bounds before drop */
+  padding: 15px;
+}
+
+
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;         /* Allows vertical row stacking on mobile */
+  gap: 20px;               /* Outer grid margin spacer between blocks */
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+.faq-card {
+  flex: 1 1 calc(50% - 20px); /* Creates clean 2-column desktop row distribution */
+  min-width: 280px;           /* Wraps cleanly when display shrinks beneath line size */
+  word-wrap: break-word;      /* Forces long sentence breaks to maintain boundary box */
+}
+
+
+@media screen and (max-width: 768px) {
+  /* Stack contact items cleanly vertically */
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-item {
+    width: 100%;           /* Full span mobile sizing limit */
+  }
+
+  /* Re-format FAQ components into a clean single vertical stack layout */
+  .faq-container {
+    flex-direction: column;
+  }
+
+  .faq-card {
+    width: 100%;           /* Extends border boundary wall out edge-to-edge */
+  }
+}
+
+
+
+
+
+
+/* Ensure the padding container handles full height and scaling */
+.form-padding {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Make the donation form box independently scrollable */
+.form-container {
+  width: 100%;
+  max-height: 550px;       /* Restricts the card from spilling past the screen view */
+  overflow-y: auto;        /* Adds a clean vertical scrollbar only if text overflows */
+  overflow-x: hidden;      /* Prevents messy side-to-side shifting inside the form */
+  padding: 20px;
+  border-radius: 8px;      /* Softens container edges */
+
+  /* Smooth touch-scrolling style specifically for mobile browsers */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Optional: Clean up input boxes so they never push past form walls */
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;  /* Guarantees input borders stay within the scroll area */
+}
+
+
+
+
+fgh
+
+
+
