@@ -250,7 +250,6 @@ text-decoration: underline;
     height: 100%;
     object-fit: contain; /* Ensures images fit neatly inside your 420x320 box without cutting off */
     display: block;
-     border: 2px solid black;
 }
 * {
   box-sizing: border-box;
@@ -269,15 +268,7 @@ text-decoration: underline;
   margin: 0 auto;         /* Centers the contact section */
   padding: 0 20px;        /* Adds safety spacing on the left and right sides */
 }
-.plant{
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Ensures images fit neatly inside your 420x320 box without cutting off */
-    display: block;
-    border: 2px solid black;
-} /* FIXED: Added missing closing bracket */
-
-.row5 .column5 {
+.row .column {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,13 +278,23 @@ text-decoration: underline;
     height: 320px;
 
     /* Your exact requested paddings */
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
 
     box-sizing: border-box; /* Keeps padding inside the 420x320 dimensions */
+    border: 2px solid black;
 }
+
+/* --- Content inside the fixed-size blocks --- */
+.plant {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures images fit neatly inside your 420x320 box without cutting off */
+    display: block;
+}
+
 
 .inline-text-container {
   display: flex; /* Aligns items on the same line */
@@ -314,7 +315,7 @@ text-decoration: underline;
 /* Form Container Style Only - UPDATED SIZE AND OVERFLOW */
 .form-container {
   background-color: #9ba38f;
-  width: 748px;         /* Exact required width */
+  width: 1000px;         /* Exact required width */
   height: 567px;        /* Exact required height */
   padding: 40px;
   border-radius: 4px;
@@ -585,6 +586,22 @@ height:74px;
 }
 
 
+.Row .Column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    /* Your exact requested dimensions */
+    width: 420px;
+    height: 320px;
 
+    /* Your exact requested paddings */
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
 
+    box-sizing: border-box; /* Keeps padding inside the 420x320 dimensions */
+    border: 2px #f3dbb9; /* FIXED: Moved inside the selector bracket */
+
+}
