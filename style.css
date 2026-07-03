@@ -287,29 +287,10 @@ text-decoration: underline;
     border: 2px solid black;
 }
 
-/* --- Content inside the fixed-size blocks --- */
-.plant {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Ensures images fit neatly inside your 420x320 box without cutting off */
-    display: block;
-}
 
 
-.inline-text-container {
-  display: flex; /* Aligns items on the same line */
-  gap: 220px;     /* Places exactly 20px of space between each item */
-  text-align: center;
-}
 
 
-/* Reset and Base Styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
 
 /* Form Container Style Only - UPDATED SIZE AND OVERFLOW */
 .form-container {
@@ -744,10 +725,76 @@ height:74px;
   box-sizing: border-box;  /* Guarantees input borders stay within the scroll area */
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 
 
-fgh
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container {
+    width: 100%;
+    height: 423px;
+    border: 2px solid #000000;
+    background-color: #f7dfbe;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
+.image-container img {
+    width: 100%;
+    height: 100%;
+    /* Changed from cover to contain to prevent cropping */
+    object-fit: contain;
+}
+
+.card-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+    max-width: 90%;
+}
+
+/* Responsive breakdown for mobile screens */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .image-container {
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+}
+
+body7 {
+    font-family: Arial, sans-serif;
+    background-color: #f7dfbe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
