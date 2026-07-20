@@ -502,12 +502,10 @@ height:74px;
   color: #000000;
 }
 .contact-wrapper {
-  display: flex;         /* Places items side-by-side */
-  flex-direction: row;   /* Forces horizontal alignment */
-  justify-content: main; /* Spaces them out across the area */
-  gap: 50px;             /* Adds space between the two items */
-  padding: 20px;         /* Adds breathing room around the edges */
+    display: flex;
+    justify-content: center; /* Changed from 'main' */
 }
+
 
 .contact-item {
   display: flex;
@@ -693,11 +691,6 @@ height:74px;
     width: 100%;           /* Extends border boundary wall out edge-to-edge */
   }
 }
-
-
-
-
-
 
 /* Ensure the padding container handles full height and scaling */
 .form-padding {
