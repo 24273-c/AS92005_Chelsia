@@ -287,11 +287,6 @@ text-decoration: underline;
     border: 2px solid black;
 }
 
-
-
-
-
-
 /* Form Container Style Only - UPDATED SIZE AND OVERFLOW */
 .form-container {
   background-color: #9ba38f;
@@ -380,6 +375,7 @@ input[type="text"]:focus, input[type="email"]:focus {
   margin-top: 40px;
 }
 
+/* Footer Status Section */
 .status-message p {
   font-size: 18px;
   font-weight: bold;
@@ -396,10 +392,6 @@ input[type="text"]:focus, input[type="email"]:focus {
 .footer-link:hover {
   opacity: 1;
 }
-
-
-
-
 
 .row12 {
   display: flex;
@@ -634,7 +626,6 @@ height:74px;
   box-sizing: border-box;
 }
 
-
 .contact-wrapper {
   display: flex;
   flex-wrap: wrap;         /* Drops items into rows when space is restricted */
@@ -654,7 +645,6 @@ height:74px;
   padding: 15px;
 }
 
-
 .faq-container {
   display: flex;
   flex-wrap: wrap;         /* Allows vertical row stacking on mobile */
@@ -670,7 +660,6 @@ height:74px;
   min-width: 280px;           /* Wraps cleanly when display shrinks beneath line size */
   word-wrap: break-word;      /* Forces long sentence breaks to maintain boundary box */
 }
-
 
 @media screen and (max-width: 768px) {
   /* Stack contact items cleanly vertically */
@@ -723,7 +712,7 @@ height:74px;
     margin: 0;
     padding: 0;
 }
-
+/*  Creates a 3 column desktop layout */
 
 .container {
     display: grid;
@@ -732,7 +721,7 @@ height:74px;
     max-width: 1400px;
     width: 100%;
 }
-
+/*  Creates a vertical column in home page */
 .card-2 {
     display: flex;
     flex-direction: column;
@@ -760,7 +749,7 @@ height:74px;
     height: auto;
     object-fit: contain;
 }
-
+  /*  Used for the text under image in home page so that the text and image are the same lengh */
 .card-text {
     font-size: 14px;
     line-height: 1.5;
@@ -775,13 +764,14 @@ height:74px;
         grid-template-columns: 1fr;
         gap: 40px;
     }
-
+/* The images in about page changes image box calculates its size on mobile screens  */
     .image-container {
         height: auto;
         aspect-ratio: 4 / 3;
     }
 }
 
+  /* used for the text under image si that they are all the same font and size  and aligined in the centre*/
 body7 {
     font-family: Arial, sans-serif;
     background-color: #f7dfbe;
