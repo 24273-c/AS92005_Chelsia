@@ -762,6 +762,9 @@ height:74px;
     width: auto;
     height: auto;
     object-fit: contain;
+        display: flex;
+    justify-content: center;
+    align-items: center;
 }
   /*  Used for the text under image in home page so that the text and image are the same lengh */
 .card-text {
@@ -794,4 +797,4 @@ body7 {
     align-items: center;
     min-height: 100vh;
     padding: 20px;
-}df
+}
