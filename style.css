@@ -719,6 +719,7 @@ height:74px;
   flex: 1;                 /* Allocates even width across desktop rows */
   min-width: 280px;        /* Dictates minimum safe screen bounds before drop */
   padding: 15px;
+
 }
 
 .faq-container {
