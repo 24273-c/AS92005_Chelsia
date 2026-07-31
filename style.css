@@ -585,8 +585,8 @@ height:74px;
   align-items: center; /* Centers the heading text */
 }
 
-/* Card Heading */
-.faq-card h3 {
+/* Card Heading - Changed to h2 to match HTML */
+.faq-card h2 {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -608,6 +608,27 @@ height:74px;
   font-size: 14px;
   margin-bottom: 12px;
   line-height: 1.4;
+}
+
+/* --- Added Dropdown-Specific Custom Styling Below --- */
+
+/* Changes cursor to a pointer when hovering over the question text */
+.faq-dropdown summary {
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  user-select: none;
+}
+
+/* Adds soft styling and padding to the revealed answer block */
+.faq-answer {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.4); /* Subtle transparent tint over beige */
+  border-radius: 4px;
+  font-size: 13px;
+  color: #333333;
 }
 
 
